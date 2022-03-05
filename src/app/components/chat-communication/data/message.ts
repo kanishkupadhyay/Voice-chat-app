@@ -1,4 +1,4 @@
-export const intro = ['Hello, I am Chitti', 'Hi, I am a Robo', 'Hello, My name is Chitti'];
+export const intro = ['Hello, I am Ghost', 'Hi, I am a Ghost', 'Hello, My name is Ghost'];
 export const help = [
     'How may i assist you?',
     'How can i help you?',
