@@ -1,0 +1,80 @@
+.parent-container {
+    background: #80008085;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.bg-container {
+    color: #fff;
+    background-image: url("../../../../assets/halloween.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.mic-button {
+    background-color: red;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    border-radius: 50px;
+    &:hover {
+        background: maroon;
+    }
+}
+.message-container {
+    color: #fff;
+    display: flex;
+    height:70%;
+    overflow: scroll;
+    border-bottom: 2px solid;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    .messages {
+        height: 400px;
+        width: 996px;
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}
+.message-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px;
+}
+.user-message p{
+    border: 2px solid;
+    border-radius:10px;
+    padding: 2px 5px;
+    width: 90px;
+    word-break: break-word;
+    min-width: 300px;
+}
+.ghost-message p{
+    width: 90px;
+    border-radius:10px;
+    padding: 2px 5px;
+    word-break: break-word;
+    border: 2px solid;
+    min-width: 300px;
+}
+
+@media(max-width: 996px) {
+    .message-box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
